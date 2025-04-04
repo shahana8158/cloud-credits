@@ -1,0 +1,149 @@
+.container{
+    width: 40%;;
+    
+    background: var(--transp-white-2);
+    backdrop-filter: blur(10px);
+    margin: 5rem auto;
+    padding: 2rem;
+    border: 2px solid var(--transp-white-2);
+    border-radius: 10px;
+    color:rgb(233, 240, 241);
+    height: 400px;
+    text-align: center;
+    }
+
+    .h2{
+        font-size: 50px;
+    }
+
+body{
+background-image: url('https://t3.ftcdn.net/jpg/04/34/58/54/360_F_434585463_zpdtTpTEbqQFfsp6RVEW6IIxEM9dHf86.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+.x{
+width: 250px;
+margin-top: 50px;
+height: 30px;
+border-radius: 5px;
+}
+.y{
+width: 150px;
+margin-top: 50px;
+height: 30px;
+font-size: 18px;
+border-radius: 10px;
+}
+.y:hover{
+transform: translateY(-3px);
+background-color:rgb(5,41,51);
+color:#fff ;
+}
+.t,.f{
+width: 250px;
+height:30px;
+border-radius: 5px;
+
+
+}  
+
+
+@media only screen and (max-width: 1400px) {
+    .container{
+     width:50%; 
+    } 
+    }
+
+    @media only screen and (max-width: 1180px) {
+        .container{
+         width:80%; 
+        } 
+        }
+        @media only screen and (max-width: 1024px) {
+            .container{
+             width:70%; 
+            } 
+            }
+        
+    @media only screen and (max-width: 700px) {
+    
+    .container{
+      text-align:center;
+      width:90%;
+      height:90%;
+    }
+    
+    form{
+      grid-template-columns:100%;
+    
+    }
+    
+    
+    }
+    @media only screen and (max-width: 752px) {
+        .container{
+         width:80%; 
+        } 
+        }
+
+    @media only screen and (max-width: 618px) {
+        .t,.f{
+            width: 150px;
+            height:30px;
+        
+            }
+
+            .container{
+                width:60%; 
+               } 
+           .h1{
+            font-size: 25px;
+           }
+           .h2{
+            font-size: 35px;
+           }
+        }
+    
+
+        @media only screen and (max-width: 583px) {
+            .t,.f{
+                width: 100px;
+                height:30px;
+            
+                }
+    
+                .container{
+                    width:60%; 
+                   } 
+               .h1{
+                font-size: 20px;
+               }
+               .h2{
+                font-size: 30px;
+               }
+            }
+            @media only screen and (max-width: 618px) {
+                
+                   .h2{
+                    font-size: 25px;
+                   }
+                   .x{
+                    width: 200px;
+                   }
+                }
+                @media only screen and (max-width: 390px) {
+                
+                    .container{
+                        width:70%; 
+                       } 
+                   
+                 }
+                 @media only screen and (max-width: 344px) {
+                
+                    .container{
+                        width:75%; 
+                       } 
+                   
+                 }
+    
+    
