@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="{% static 'css/index.css'%}">
+ 
+   
+</head>
+<body>
+<div class="container">
+    <h2 class="h2" >Currency Converter</h2>
+    <form action="" method="post" >
+
+        {% csrf_token%}
+
+       <select name="from_currency" id=" " class="f">
+
+           {% for currency in currency %}
+
+              <option value="{{currency}}">{{currency}}</option>
+
+           {% endfor %}
+
+       </select>
+
+       <span style="font-size: 20px;"> TO </span>
+
+       <select name="to_currency" id=""  class="t">
+
+        {% for currency in currency %}
+
+           <option value="{{currency}}">{{currency}}</option>
+
+        {% endfor %}
+
+    </select>
+     
+    <input type="text" placeholder="Enter Amount" name="amount" class="x"><br>
+    <input type="submit" value="convert" class="y">
+
+    </form>
+
+    {%  if result %}
+
+       <h1 class="h1">Converted Amount : {{result}}</h1>
+
+    {%  endif %}
+</div>
+</body>
+</html>
